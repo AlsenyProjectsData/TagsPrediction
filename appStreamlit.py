@@ -5,7 +5,7 @@ import numpy as np
 import sklearn
 import joblib
 ##
-model_rf = joblib.load(open("TagsPredict.pkl", "rb"))
+model_rf = joblib.load(open("/home/alseny/Documents/Proje5_NLP/TagsPredict.pkl", "rb"))
 ## Fct
 def predict_tags(docx):
     results = model_rf.predict([docx])
